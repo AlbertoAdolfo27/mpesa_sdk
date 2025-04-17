@@ -217,8 +217,6 @@ src/
 
 ## To-Do
 
-- [ ] Suporte à produção (live)
-- [ ] Melhorar tratamento de erros e exceções
 - [ ] Testes unitários com PHPUnit
 - [ ] Implementar suporte a webhooks
 
@@ -419,8 +417,6 @@ src/
 
 ## To-Do
 
-- [ ] Production (live) support
-- [ ] Improved error/exception handling
 - [ ] Unit tests with PHPUnit
 - [ ] Webhook support
 
