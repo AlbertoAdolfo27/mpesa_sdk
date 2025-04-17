@@ -1,0 +1,19 @@
+{
+    "name": "albertoadolfo27/mpesa_sdk",
+    "description": "unofficial Vodacom M-Pesa SDK",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MpesaSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alberto Jordane adolfo",
+            "email": "albertoadolfo27@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
