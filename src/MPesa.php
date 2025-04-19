@@ -37,16 +37,16 @@ class MPesa
         return $openSSLPublicKey;
     }
 
-    public static function generateUniqueReference(int $length = 6): string
+    public static function generateUniqueReference(): string
     {
         $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
         $randomString = '';
-        for ($i = 0; $i < $length; $i++):
+        for ($i = 0; $i <= 5; $i++):
             $index = rand(0, strlen($characters) - 1);
             $randomString .= $characters[$index];
         endfor;
-        return $randomString . "" . time();
+        return uniqid() . $randomString;
     }
 
     private function request(string $url, array $postfields, string $method = "POST"): object|false
