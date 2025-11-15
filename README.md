@@ -20,8 +20,8 @@ composer require albertoadolfo27/mpesa_sdk
 
 - PHP 8.0+
 - Extensão `openssl` habilitada
-- Chave pública fornecida pela Vodacom
-- API Key válida
+- API Key válida fornecida pela MPESA
+- Chave pública fornecida pela MPESA
 
 ---
 
@@ -34,7 +34,9 @@ use MpesaSdk\MPesa;
 
 $mpesa = new MPesa(
     apiKey: 'SUA_API_KEY',
-    publicKey: 'CHAVE_PUBLICA_DA_VODACOM'
+    publicKey: 'CHAVE_PUBLICA_DA_VODACOM',
+    origin: "*", // Argumento opcional. Valor padrão: '*'
+    verifySSL: true // Argumento opcional. Valor padrão: true
 );
 ```
 
@@ -261,8 +263,8 @@ composer require albertoadolfo27/mpesa_sdk
 
 - PHP 8.0+
 - `openssl` extension enabled
-- Public key provided by Vodacom
-- Valid API Key
+- Valid API Key provided by MPESA
+- Public key provided by MPESA
 
 ---
 
@@ -275,7 +277,9 @@ use MpesaSdk\MPesa;
 
 $mpesa = new MPesa(
     apiKey: 'YOUR_API_KEY',
-    publicKey: 'VODACOM_PUBLIC_KEY'
+    publicKey: 'VODACOM_PUBLIC_KEY',
+    origin: "*", // Optional argument. Default value: '*'
+    verifySSL: true // Optional argument. Defaut value: true
 );
 ```
 
