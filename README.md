@@ -200,8 +200,6 @@ if ($response->responseCode === MPesaResponseCode::SUCCESS) {
 Para facilitar a criação de uma referência única a ser usada no parâmetro `thirdPartyReference`, o SDK oferece o método auxiliar:
 
 ```php
-use MpesaSdk\MPesa;
-
 $uniqueReference = MPesa::generateUniqueReference();
 ```
 
@@ -446,8 +444,6 @@ if ($response->responseCode === MPesaResponseCode::SUCCESS) {
 To easily generate a unique value to be used in the `thirdPartyReference` parameter, you can use the helper method provided by the SDK:
 
 ```php
-use MpesaSdk\MPesa;
-
 $uniqueReference = MPesa::generateUniqueReference();
 ```
 
